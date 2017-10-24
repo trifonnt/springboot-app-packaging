@@ -1,9 +1,9 @@
 Packaging [Spring Boot](https://projects.spring.io/spring-boot/) application with external dependencies using Maven
 
-Spring Boot has simplified the deployment of java based web / API applications drastically. It has eliminated the process of deploying the WAR file into the web container provided by Tomcat or any other application servers. It has brought in a new paradigm shift where the container libraries (like tomcat / Ubuntu / jetty) are themselves embedded along with application classes / jar within the fat spring boot jar. Thus making it a truly standalone application and a candidate for micro service development.
-But, there are few minor challenges, which a spring boot developer would face, when deploying the Spring boot application.
+Spring Boot has simplified the deployment of java based web / API applications drastically. It has eliminated the process of deploying the WAR file into the web container provided by Tomcat or any other application servers. It has brought in a new paradigm shift where the container libraries (like tomcat / Ubuntu / jetty) are themselves embedded along with application classes / jar within the fat Spring Boot jar. Thus making it a truly standalone application and a candidate for micro service development.
+But, there are few minor challenges, which a Spring Boot developer would face, when deploying the Spring Boot application.
 
-1)	How do we ship the external configuration files like application.properties, configuration xml files etc. along with the Spring boot jar.
+1)	How do we ship the external configuration files like application.properties, configuration xml files etc. along with the Spring Boot jar.
 
 2)	How can we copy the start-up script with VM and other parameters to start the application to deployment environments
 
@@ -18,6 +18,6 @@ Once we address the above concerns. The following questions would be addressed, 
 2)	Ship the micro service with external configurations or dependencies, packed into one deployable artifact to any new developer, who can just run it by using a startup script.
 
 The Solution
-Maven has the ability to bundle all the artifacts into a directory and create .zip or a .tar file for easy shipment, using the maven-assembly-plugin. We will have to leverage this feature to programmatically organize the dependent artifacts to support the spring boot jar to run seamlessly.
+Maven has the ability to bundle all the artifacts into a directory and create .zip or a .tar file for easy shipment, using the maven-assembly-plugin. We will have to leverage this feature to programmatically organize the dependent artifacts to support the Spring Boot jar to run seamlessly.
 
-The sample code demonstrates as how the Springboot jar along with external dependencies can be packaged using Maven.
+The sample code demonstrates as how the Spring Boot jar along with external dependencies can be packaged using Maven.
