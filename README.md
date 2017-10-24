@@ -1,6 +1,6 @@
-Packaging Springboot application with external dependencies using Maven
+Packaging [Spring Boot](https://projects.spring.io/spring-boot/) application with external dependencies using Maven
 
-Spring boot has simplified the deployment of java based web / API applications drastically. It has eliminated the process of deploying the WAR file into the web container provided by Tomcat or any other application servers. It has brought in a new paradigm shift where the container libraries (like tomcat / Ubuntu / jetty) are themselves embedded along with application classes / jar within the fat spring boot jar. Thus making it a truly standalone application and a candidate for micro service development.
+Spring Boot has simplified the deployment of java based web / API applications drastically. It has eliminated the process of deploying the WAR file into the web container provided by Tomcat or any other application servers. It has brought in a new paradigm shift where the container libraries (like tomcat / Ubuntu / jetty) are themselves embedded along with application classes / jar within the fat spring boot jar. Thus making it a truly standalone application and a candidate for micro service development.
 But, there are few minor challenges, which a spring boot developer would face, when deploying the Spring boot application.
 
 1)	How do we ship the external configuration files like application.properties, configuration xml files etc. along with the Spring boot jar.
